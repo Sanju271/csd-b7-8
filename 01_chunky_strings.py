@@ -27,9 +27,12 @@ import unittest
 # Implement the below function and run this file
 # Return the output, No need read input or print the ouput
 
-
 def chunky_strings(s, n):
-	pass
+    lst = []
+    for i in range(0, len(s), n):
+        lst.append(s[i:i + n])
+    return lst
+    print(chunky_strings(abcde,2))
 
 # DO NOT TOUCH THE BELOW CODE
 # pylint: disable=unused-variable
