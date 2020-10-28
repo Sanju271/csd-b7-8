@@ -29,7 +29,14 @@ import unittest
 
 
 def chunky_strings(s, n):
-	pass
+      string = input("s: ")
+      n = input("n: ")
+  
+# Using list comprehension 
+out = [(string[i:i+n]) for i in range(0, len(string), n)] 
+  
+# Printing output 
+print(out) 
 
 # DO NOT TOUCH THE BELOW CODE
 # pylint: disable=unused-variable
